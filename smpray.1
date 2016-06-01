@@ -1,0 +1,42 @@
+.TH SMPRAY "1" "April 2011" "GNU non-utils 1.0-2" "Red Hat"
+.SH NAME
+smpray \- A simple, multi-threaded, real-time ray tracing demonstration program.
+.SH SYNOPSIS
+.B smpray [-t 
+.I threads
+.B ] [-g
+.I size
+.B ] [-z
+.I zoom
+.B ] [-mnp]
+.SH DESCRIPTION
+.\" smpray 
+.PP
+The smpray program is a simple, real-time ray tracer which can be used to
+demonstraion many aspects of a shared memory computer that incorporates
+OpenGL, X11 graphics and resource control.
+.SH OPTIONS
+.IP "-t threads"
+The number of threads to use (default = 1, maximum is 128).
+.IP "-g size"
+Set the image size to be size^2 pixels.
+.IP "-z factor"
+Set the zoom factor.
+.IP -m 
+Disable mouse input.
+.IP -n 
+Do not use graphics output.
+.IP -p 
+Report statistics to standard out.
+.SH AUTHOR
+Bob Kozdemba <koz@redhat.com>
+.SH BUGS
+Stereo redering not working.
+.SH COPYRIGHT
+Copyright \(co 2012 Red Hat 
+.br
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Seriously...you could print the code out and line a bird cage or wrap
+fish with it, and we will not warrant it for even that purpose.
+
